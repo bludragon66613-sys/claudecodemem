@@ -22,8 +22,28 @@ yourself — you delegate, sequence, and consolidate.
 - TARGET_AUDIENCE: {{TARGET_AUDIENCE}}
 - PRICE_SEGMENT: {{PRICE_SEGMENT}} (e.g., affordable / mid / premium / ultra-luxury)
 - USP: {{USP}} (e.g., lakefront, smart homes, gated township)
-- DEVELOPER_NAME: {{DEVELOPER_NAME}}
+- DEVELOPER_NAME: {{DEVELOPER_NAME}} (brand name — not legal entity)
+- LEGAL_ENTITY: {{LEGAL_ENTITY}} (e.g., SSquare Constructions Pvt. Ltd.)
+- FOUNDERS: {{FOUNDERS}} (optional — for personal brand integration)
 - BRAND_TONE: {{BRAND_TONE}} (e.g., aspirational, grounded, modern, heritage)
+- BRAND_INSPIRATION: {{BRAND_INSPIRATION}} (reference brands: Aman, St. Regis, Sobha, etc.)
+
+## IMPORTANT — DEVELOPER BRAND
+Before running the project pipeline, also establish the **developer company brand** if it
+does not yet exist. The developer brand (logo, tagline, voice, colour palette) must be
+defined first so the project brand can sit correctly underneath it.
+
+Reference: `branding-pipeline/pipeline/` on github.com/bludragon66613-sys/branding-pipeline
+
+## ACTIVE EXAMPLE — Virāma by SSquare (March 2026)
+- DEVELOPER_NAME: SSquare (legal: SSquare Constructions Pvt. Ltd.)
+- FOUNDERS: Vardaan Sarna & Hurmat Klair Sarna
+- PROJECT_NAME: Virāma
+- DEVELOPER_TAGLINE: "The Standard, Privately Held."
+- PROJECT_TAGLINE: "Come Home to Quiet."
+- LOGOMARK: S² monogram (S-squared)
+- DEVELOPER_PALETTE: Obsidian / Raw Ivory / Platinum / Slate
+- PROJECT_PALETTE: Virāma Stone / Pavilion White / Arcadian Gold / Sandstone Pale / The Green Circuit
 
 ## SUB-AGENT SEQUENCE
 
