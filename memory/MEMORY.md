@@ -12,7 +12,8 @@
 - [project_aigency02.md](project_aigency02.md) — Aigency02 agent repo, superpowers integration, restore instructions
 
 ## Session Savepoints
-- [session_savepoint_2026-03-23c.md](session_savepoint_2026-03-23c.md) — **LATEST.** Trail of Bits (59 skills) + Obsidian (5 skills) + awesome-claude-code commands installed. ~200 skills, 207 agents, 65 commands.
+- [session_savepoint_2026-03-23d.md](session_savepoint_2026-03-23d.md) — **LATEST.** UI/UX Pro Max skill pack installed (7 skills). 205 skills, 207 agents, 65 commands.
+- [session_savepoint_2026-03-23c.md](session_savepoint_2026-03-23c.md) — Trail of Bits (59 skills) + Obsidian (5 skills) + awesome-claude-code commands installed. ~200 skills, 207 agents, 65 commands.
 - [session_savepoint_2026-03-23b.md](session_savepoint_2026-03-23b.md) — ECC fully installed. 207 agents, 133 skills, 59 commands, 11 language rule sets.
 - [session_savepoint_2026-03-23.md](session_savepoint_2026-03-23.md) — Session opened fresh. No active tasks. Environment stable (156 agents, GSD, claude-mem).
 - [session_savepoint_2026-03-22.md](session_savepoint_2026-03-22.md) — Full state: 156 agents + 14 superpowers skills installed, pushed to Aigency02. Virāma project open next.
