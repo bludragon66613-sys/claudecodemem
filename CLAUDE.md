@@ -34,20 +34,6 @@ These are globally installed in `~/.claude/agents/` and available in every sessi
 | `senior-software-engineer` | Non-trivial code, refactors, debugging | Surfaces assumptions, pushes back, surgical scope |
 | `technical-cofounder` | Building a product from an idea | Phase-by-phase: discovery → plan → build → polish → handoff |
 
-## Aeon Skills (39 total)
-Dispatched to GitHub Actions via NERV terminal (`DISPATCH:{"skill":"<name>"}`):
-
-**INTEL:** morning-brief, rss-digest, hacker-news-digest, paper-digest, tweet-digest, reddit-digest, research-brief, search-papers, security-digest, fetch-tweets, search-skill, idea-capture
-
-**CRYPTO (Hyperliquid):** hl-intel *(flagship)*, hl-scan, hl-monitor, hl-trade, hl-report, hl-alpha
-
-**CRYPTO MONITORING:** token-alert, wallet-digest, on-chain-monitor, defi-monitor
-
-**GITHUB:** issue-triage, pr-review, github-monitor
-
-**BUILD:** article, digest, feature, code-health, changelog, build-skill
-
-**SYSTEM:** goal-tracker, skill-health, self-review, reflect, memory-flush, weekly-review, heartbeat
 
 ## Backup & Restore
 Everything is backed up to `github.com/bludragon66613-sys/claudecodemem`.
@@ -66,6 +52,29 @@ for (const a of agents) {
 }
 "
 ```
+
+## OpenClaw (Telegram AI Bot)
+Local AI gateway that powers the Telegram bot. Must be running at all times.
+- **Check health:** `openclaw status` (gateway + Telegram channel)
+- **Current model:** `openai-codex/gpt-5.4` (Anthropic token expired as of 2026-03-25)
+- **Auth expires:** ~April 5, 2026 (openai-codex OAuth)
+- **Restore Claude:** Run `C:\Users\Rohan\refresh-openclaw-auth.bat` in Windows Terminal, then `openclaw models set anthropic/claude-sonnet-4-6 && openclaw gateway restart`
+- **Full details:** see `memory/project_openclaw.md`
+
+## Aeon Skills (41 total, +skill-eval +skill-evolve)
+Dispatched to GitHub Actions via NERV terminal (`DISPATCH:{"skill":"<name>"}`):
+
+**INTEL:** morning-brief, rss-digest, hacker-news-digest, paper-digest, tweet-digest, reddit-digest, research-brief, search-papers, security-digest, fetch-tweets, search-skill, idea-capture
+
+**CRYPTO (Hyperliquid):** hl-intel *(flagship)*, hl-scan, hl-monitor, hl-trade, hl-report, hl-alpha
+
+**CRYPTO MONITORING:** token-alert, wallet-digest, on-chain-monitor, defi-monitor
+
+**GITHUB:** issue-triage, pr-review, github-monitor
+
+**BUILD:** article, digest, feature, code-health, changelog, build-skill
+
+**SYSTEM:** goal-tracker, skill-health, self-review, reflect, memory-flush, weekly-review, heartbeat, skill-eval, skill-evolve
 
 ## Preferences
 - Always back up agents + memory to `claudecodemem` after significant changes
