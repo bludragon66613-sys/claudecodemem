@@ -1,6 +1,6 @@
 ---
 name: project_virama
-description: Virāma by SSquare — ultra-luxury villa project branding, all file locations and key brand facts
+description: Virāma/SSquare original branding + 10-brand pipeline (brand-pipeline/) replacing SSquare with new standalone brands
 type: project
 ---
 
@@ -26,6 +26,15 @@ type: project
 - **Brand tone:** Serene opulence — minimal in expression, maximal in experience. Hushed confidence.
 - **No founders named** — brand is generic to SSquare as a company
 
+## Brand Pipeline (New — 2026-03-23)
+**Pipeline dir:** `~/branding-pipeline/brand-pipeline/`
+- `generate-brands.ps1` — runs the pipeline
+- `brand-template.html` — tokenized 10-slide template
+- `brand-data.json` — 10 standalone brands replacing Virāma/SSquare
+- Run: `cd ~/branding-pipeline/brand-pipeline && .\generate-brands.ps1`
+- See `session_savepoint_2026-03-23e.md` for full brand list + decisions
+
 ## Why:
 User confirmed brand should be generic to SSquare company (not attributed to founders personally).
 SSquare has 35-year commercial RE track record; Virāma is their residential debut.
+Later session: user requested SSquare dropped entirely, 10 new standalone brands created.

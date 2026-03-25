@@ -54,10 +54,11 @@ for (const a of agents) {
 ```
 
 ## OpenClaw (Telegram AI Bot)
-Local AI gateway that powers the Telegram bot. Must be running at all times.
-- **Check health:** `openclaw status` (gateway + Telegram channel)
-- **Current model:** `openai-codex/gpt-5.4` (Anthropic token expired as of 2026-03-25)
-- **Auth expires:** ~April 5, 2026 (openai-codex OAuth)
+Local AI gateway that powers the Telegram bot (@kaneda6bot). Must be running at all times.
+- **Health check:** `bash ~/openclaw-healthcheck.sh` (auto-fixes common issues)
+- **Current model:** `openai-codex/gpt-5.4` (primary), `openai-codex/gpt-5.4-mini` (fallback)
+- **Auth expires:** ~March 31, 2026 (openai-codex OAuth)
+- **Anthropic:** EXPIRED — refresh via `refresh-openclaw-auth.bat` in Windows Terminal when needed
 - **Restore Claude:** Run `C:\Users\Rohan\refresh-openclaw-auth.bat` in Windows Terminal, then `openclaw models set anthropic/claude-sonnet-4-6 && openclaw gateway restart`
 - **Full details:** see `memory/project_openclaw.md`
 
