@@ -13,14 +13,14 @@
 - [project_aigency02.md](project_aigency02.md) — Aigency02 agent repo, superpowers integration, restore instructions
 - [project_rei.md](project_rei.md) — Rei AI VTuber + Solana token launcher (~/companion/), forked from AIRI
 - [project_paperclip.md](project_paperclip.md) — Paperclip AI: open-source agent orchestration platform at ~/paperclip
+- [project_tallyai.md](project_tallyai.md) — TallyAI: AI accounting intelligence for Indian SMEs, Tally XML parser + dashboard
 
 ## Session Savepoints (latest 5 — older ones in _archive/)
+- [session_savepoint_2026-03-26d.md](session_savepoint_2026-03-26d.md) — TallyAI MVP: full build, Munshi brand, Vercel deploy, 8 skills installed
 - [session_savepoint_2026-03-26c.md](session_savepoint_2026-03-26c.md) — SIGNAL consultancy: full GTM, pricing, brand, 25-slide deck
 - [session_savepoint_2026-03-26b.md](session_savepoint_2026-03-26b.md) — NERV brand mobile optimization deployed
 - [session_savepoint_2026-03-26.md](session_savepoint_2026-03-26.md) — All 441 Paperclip agents bulk-configured, Windows symlink fix, first heartbeat
 - [session_savepoint_2026-03-25k.md](session_savepoint_2026-03-25k.md) — Status check: Sonnet 4.6 default, 207 agents + 42 skills healthy, Obsidian synced
-- [session_savepoint_2026-03-25j.md](session_savepoint_2026-03-25j.md) — AASARA pipeline: DB initialized, 6 pages verified. Needs API keys
-- [session_savepoint_2026-03-25i.md](session_savepoint_2026-03-25i.md) — Kaneda: 42 Aeon skills registered, superpowers + agentic added. 67 skills
 
 ## In Progress
 - `~/.claude/sessions/2026-03-24-nerv-desktop-session.tmp` — NERV Desktop app (Tauri+React). Brainstorm done, spec not written

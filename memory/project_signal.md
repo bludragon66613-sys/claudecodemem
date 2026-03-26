@@ -14,16 +14,16 @@ type: project
 
 **How to apply:** When Rohan discusses business strategy, pricing, clients, GTM, or the consultancy — this is the active project.
 
-## Brand Architecture
-- **SIGNAL** = parent consultancy brand (signs contracts, sends invoices)
-- **NERV** = product/platform sub-brand (the demo reel)
+## Brand Architecture (UPDATED 2026-03-26)
+- **NERV** = parent consultancy brand (signs contracts, sends invoices)
+- **SIGNAL** = product/platform sub-brand (the autonomous agent engine)
 - **Paperclip** = open-source credibility signal
 - **OpenClaw** = AI gateway infrastructure
 
 ## Strategy Files (all in ~/strategy/)
 | File | Content |
 |------|---------|
-| `SIGNAL_GTM_Presentation.html` | 25-slide presentation deck (NERV aesthetic) |
+| `NERV_GTM_Presentation.html` | 25-slide presentation deck (NERV parent brand) |
 | `gtm-strategy.md` | Full GTM strategy — positioning, segments, sales playbook |
 | `products-services-catalog.md` | 4 service tiers, 6 productized services, 3 retainer tiers |
 | `global-sme-strategy.md` | Global: 4 verticals, $149-899/mo, modular architecture |
@@ -31,8 +31,8 @@ type: project
 | `brand-gtm-strategy.md` | Brand identity, voice, creative assets, 4-week launch |
 
 ## Key Decisions Made
-- NERV should NOT be the consultancy name (IP risk, audience ceiling)
-- SIGNAL recommended as parent brand
+- NERV IS the parent consultancy brand (user decision — overrides earlier recommendation)
+- SIGNAL is the product/platform sub-brand (autonomous agent engine)
 - India first (proximity, underserved), then Global with case studies
 - WhatsApp-first delivery for India MSMEs (moat vs Zoho/Freshworks)
 - Don't sell "agents" — sell outcomes ("5 AI employees, INR 5K/month")
