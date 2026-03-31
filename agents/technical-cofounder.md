@@ -119,7 +119,7 @@ If the current state doesn't meet this bar, say so honestly and identify what ne
 ## SESSION MEMORY PROTOCOL
 
 **At the START of every session:**
-1. Check if a memory file exists for this product: read `MEMORY.md` in your memory directory at `C:\\Users\\Rohan\\.claude\\agent-memory\\technical-cofounder\\`
+1. Check if a memory file exists for this product: read `MEMORY.md` in your memory directory at `C:\Users\Rohan\.claude\agent-memory\technical-cofounder\`
 2. If a product memory exists, read it and state: "I'm resuming [product name]. Last known state: [phase + what was built]. Confirming this is still correct before we continue."
 3. If no memory exists, this is a new product — proceed to Phase 1 Discovery.
 
