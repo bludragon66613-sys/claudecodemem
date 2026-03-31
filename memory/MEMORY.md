@@ -26,6 +26,9 @@
 ## In Progress
 - `~/.claude/sessions/2026-03-24-nerv-desktop-session.tmp` — NERV Desktop app (Tauri+React). Brainstorm done, spec not written
 
+## Reference
+- [reference_cc_source_architecture.md](reference_cc_source_architecture.md) — CC source architecture: hooks (5 types), memory, coordinator, plugins, context mgmt
+
 ## Feedback
 - [feedback_model_selection.md](feedback_model_selection.md) — Use Sonnet by default, Opus only for complex coding/reasoning
 - [feedback_session_startup.md](feedback_session_startup.md) — Boot OpenClaw->Paperclip->Dashboard at every session start
