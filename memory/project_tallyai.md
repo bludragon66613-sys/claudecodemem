@@ -32,6 +32,17 @@ AI layer that works WITH Tally (not a replacement). Ingests Tally XML exports + 
 - Issue prefix: TAL
 - 10 agents: CTO, Frontend Lead, Backend Lead, AI Engineer, Database Architect, Tally Domain Expert, WhatsApp Bot Engineer, QA Engineer, DevOps Engineer, Product Manager
 
+## Brand Identity (Munshi Neo v2.0) — Updated 2026-03-27
+- **Brand Guide:** `~/tallyai/brand/BRAND_MASTER_GUIDE.md` (single source of truth)
+- **Design System:** `~/tallyai/docs/design-system-v2.md` (technical spec with CSS tokens)
+- **Positioning:** `~/tallyai/brand/BRAND_POSITIONING.md` (messaging, taglines, elevator pitches)
+- **Image Prompts:** `~/tallyai/brand/IMAGE_PROMPTS.md` (8 AI generation prompts for brand assets)
+- **Primary Tagline:** "Hisaab samajhta hai." (replaces "Hisaab. Automated." as brand tagline; old tagline kept for UI)
+- **Colors:** Neelam green #1B6B4A (primary), Kesar gold #E8A317 (secondary), Neel blue #3B6FC2 (tertiary), cool off-white #F7F8FA (background)
+- **Fonts:** Inter (UI body, replaces DM Sans), DM Sans (display headings only), IBM Plex Mono (financial data), Noto Sans Devanagari (Hindi)
+- **Key decisions:** Drop Fraunces serif, drop paper texture/ruled lines, drop warm cream background, evolve stamps to flat badges, add gradient accent line + AI sparkle indicator
+- **Competitor research:** doola.com (warm gold, casual voice) and QuickBooks (protected green, "Backing You") analyzed for positioning
+
 ## Build Status (Phase 1 — Week 1)
 - [x] Next.js 16 scaffolded with TypeScript + Tailwind
 - [x] shadcn/ui components (button, card) + dark theme
@@ -46,9 +57,11 @@ AI layer that works WITH Tally (not a replacement). Ingests Tally XML exports + 
 - [x] Company selector (multi-company support)
 - [x] E2E tested: import → bank → reconcile → query all working
 - [x] Vercel project linked (bludragon66613-sys-projects/tallyai)
+- [x] Brand Master Guide v2.0 (Munshi Neo) — positioning, visual identity, image prompts
 - [ ] WhatsApp bot integration (Phase 2)
 - [ ] AI Gateway for NL queries (needs vercel env pull for OIDC)
 - [ ] Deploy to Vercel production
+- [ ] Implement Munshi Neo design system (CSS migration from v1 to v2)
 
 ## Pricing Model
 - Free: 1 company, 500 vouchers/month, 10 queries/day

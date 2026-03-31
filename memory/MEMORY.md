@@ -16,16 +16,18 @@
 - [project_tallyai.md](project_tallyai.md) — TallyAI: AI accounting intelligence for Indian SMEs, Tally XML parser + dashboard
 
 ## Session Savepoints (latest 5 — older ones in _archive/)
+- `~/.claude/sessions/2026-03-27-tallyai-auth-fix-session.tmp` — TallyAI auth fix: disabled auth for MVP, tabs now work on production
+- [session_savepoint_2026-03-27.md](session_savepoint_2026-03-27.md) — TallyAI hardening: 15 security fixes, Upstash Redis, 345 tests, production deploy
 - [session_savepoint_2026-03-26d.md](session_savepoint_2026-03-26d.md) — TallyAI MVP: full build, Munshi brand, Vercel deploy, 8 skills installed
 - [session_savepoint_2026-03-26c.md](session_savepoint_2026-03-26c.md) — SIGNAL consultancy: full GTM, pricing, brand, 25-slide deck
 - [session_savepoint_2026-03-26b.md](session_savepoint_2026-03-26b.md) — NERV brand mobile optimization deployed
 - [session_savepoint_2026-03-26.md](session_savepoint_2026-03-26.md) — All 441 Paperclip agents bulk-configured, Windows symlink fix, first heartbeat
-- [session_savepoint_2026-03-25k.md](session_savepoint_2026-03-25k.md) — Status check: Sonnet 4.6 default, 207 agents + 42 skills healthy, Obsidian synced
 
 ## In Progress
 - `~/.claude/sessions/2026-03-24-nerv-desktop-session.tmp` — NERV Desktop app (Tauri+React). Brainstorm done, spec not written
 
 ## Feedback
+- [feedback_model_selection.md](feedback_model_selection.md) — Use Sonnet by default, Opus only for complex coding/reasoning
 - [feedback_session_startup.md](feedback_session_startup.md) — Boot OpenClaw->Paperclip->Dashboard at every session start
 - [feedback_openclaw_startup.md](feedback_openclaw_startup.md) — OpenClaw restart pitfalls: zombie shells, duplicate gateway instances
 - [feedback_backup.md](feedback_backup.md) — Back up agents and memory to claudecodemem after significant changes

@@ -17,18 +17,26 @@ OpenClaw runs locally and connects the Telegram bot (@kaneda6bot) to AI models.
 **Quick health check:** `bash ~/openclaw-healthcheck.sh` (checks everything + auto-fixes)
 **Manual check:** `openclaw status` then `openclaw models status`
 
-## Current Auth State (as of 2026-03-25 evening)
-- **Active model:** `openai-codex/gpt-5.4` (primary) + `openai-codex/gpt-5.4-mini` (fallback)
-- **Auth:** `openai-codex:default` OAuth — expires ~March 31, 2026
-- **Anthropic auth:** EXPIRED (token `sk-ant-oat01-...8OcWJAAA` returns 404). Keep in auth store for future refresh.
+## Current Auth State (as of 2026-03-27)
+- **Active model:** `anthropic/claude-sonnet-4-6` (primary) + `openai-codex/gpt-5.4-mini` (fallback)
+- **Auth:** `openai-codex:default` OAuth — expires ~April 2, 2026
+- **Anthropic auth:** Two static tokens (`anthropic:claude` and `anthropic:default`) in auth-profiles.json
 - **Memory search:** Disabled (no embedding provider configured)
 - **Config:** `~/.openclaw/openclaw.json`
 - **Auth profiles:** `~/.openclaw/agents/main/agent/auth-profiles.json`
 
+## Security Hardening (applied 2026-03-27)
+- **Telegram DMs:** `pairing` mode (requires pairing code, not open to anyone)
+- **Telegram groups:** `disabled` (bot cannot be added to any group)
+- **Tools:** Restricted to `group:web`, `group:ui`, `image` (removed `group:fs`, `group:runtime`, `group:sessions`, `subagents`)
+- **Hooks:** `defaultSessionKey: "hook:ingress"`, `allowedAgentIds: ["main"]`
+- **Security audit:** 0 critical, 1 warn (trusted proxies — N/A for local-only), 2 info
+- **Skills symlinks:** Replaced 8 broken symlinks in `~/.openclaw/skills/` with real copies (fixes repeated warnings in logs)
+
 ## Known Conflict Sources (all resolved as of 2026-03-25)
 1. **Claude Code telegram plugin** — DISABLED in `~/.claude/settings.json` (causes 409 if enabled with same bot token)
 2. **GitHub Actions "Messages" workflow** — DISABLED (was actively polling Telegram, caused 409)
-3. **Phantom auth profiles** — Removed `anthropic:openclaw` and `anthropic:default` from openclaw.json (only `anthropic:claude` exists in auth-profiles.json)
+3. **Phantom auth profiles** — Removed `anthropic:openclaw` and `anthropic:default` from openclaw.json
 
 ## Token Refresh — Restore Claude (requires Windows Terminal, not Claude Code)
 The `sk-ant-oat01-` token expires periodically. To refresh:
