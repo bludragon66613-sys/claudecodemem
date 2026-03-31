@@ -4,6 +4,7 @@ description: "Use this agent when you need a comprehensive UI/UX design audit, p
 model: sonnet
 color: yellow
 memory: project
+effort: medium
 tools:
   - Read
   - Write

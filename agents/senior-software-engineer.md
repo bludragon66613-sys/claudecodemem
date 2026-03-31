@@ -4,6 +4,7 @@ description: "Use this agent when you need a disciplined, senior-level coding pa
 model: sonnet
 color: green
 memory: project
+effort: high
 tools:
   - Read
   - Write
