@@ -119,3 +119,22 @@ ID format: `{name}@{marketplace}` (builtin: `@builtin`)
 Components: skills, hooks, MCP servers
 20+ discriminated union error types for type-safe error handling
 Memoized loading with cache invalidation on settings change
+
+## Background Services (Most Novel)
+
+### extractMemories
+Runs at end of each query loop (when model finishes without tool calls). Uses forked agent sharing parent prompt cache. Scans transcript for memory-worthy items. If main agent already wrote memories, extractor skips that range. Tool budget: Read, Grep, Glob, read-only Bash, Edit/Write for memory dir only.
+Key files: `src/services/extractMemories/extractMemories.ts`, `prompts.ts`
+
+### autoDream (Memory Consolidation)
+Fires every 24h with ≥5 sessions since last. 4 phases: Orient (ls memory, read MEMORY.md) → Gather signal (daily logs, drifted memories, transcript search) → Consolidate (merge, fix dates, delete contradicted) → Prune index (keep under 200 lines/25KB). Read-only Bash, lock/rollback mechanism.
+Key files: `src/services/autoDream/autoDream.ts`, `consolidationPrompt.ts`, `consolidationLock.ts`
+
+### MagicDocs (ANT-only)
+Auto-updating documentation. Files with `# MAGIC DOC: [title]` header auto-tracked. Background agent updates when conversation idle. Only allows Edit tool on that specific file. Custom prompts loadable from `~/.claude/magic-docs/prompt.md`.
+Philosophy: terse, high-signal-only, architecture+entry points, NOT code walkthroughs.
+Key files: `src/services/MagicDocs/magicDocs.ts`, `prompts.ts`
+
+### Forked Agent Pattern
+All 3 services use `runForkedAgent()` which shares parent's prompt cache (CacheSafeParams: system prompt, tools, model, messages prefix, thinking config must be identical). This makes background agents nearly free on cache hits.
+Key file: `src/utils/forkedAgent.ts`
