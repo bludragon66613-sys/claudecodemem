@@ -1,10 +1,14 @@
 {
   "env": {},
   "permissions": {
-    "defaultMode": "bypassPermissions",
     "allow": [
       "mcp__pencil"
-    ]
+    ],
+    "defaultMode": "bypassPermissions"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "\"C:\\Program Files\\nodejs\\node.exe\" \"C:/Users/Rohan/.claude/hooks/gsd-statusline.js\""
   },
   "enabledPlugins": {
     "claude-mem@thedotmack": true,
@@ -21,14 +25,16 @@
         "source": "github",
         "repo": "tobi/qmd"
       }
+    },
+    "thedotmack": {
+      "source": {
+        "source": "github",
+        "repo": "thedotmack/claude-mem"
+      }
     }
   },
   "effortLevel": "high",
   "autoUpdatesChannel": "latest",
   "voiceEnabled": true,
-  "skipDangerousModePermissionPrompt": true,
-  "statusLine": {
-    "type": "command",
-    "command": "\"C:\\Program Files\\nodejs\\node.exe\" \"C:/Users/Rohan/.claude/hooks/gsd-statusline.js\""
-  }
+  "skipDangerousModePermissionPrompt": true
 }

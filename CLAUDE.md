@@ -33,6 +33,7 @@ Backup repo for agents and memory. Always push here after changes.
 ## Available Agents
 These are globally installed in `~/.claude/agents/` and available in every session:
 
+### Custom Agents
 | Agent | Trigger | Purpose |
 |-------|---------|---------|
 | `product-manager` | Product planning, PRDs, strategy, discovery, GTM, growth | Google-caliber PM with 65 skills across 8 workflows |
@@ -40,6 +41,38 @@ These are globally installed in `~/.claude/agents/` and available in every sessi
 | `ui-ux-architect` | Design audit, UI polish, visual inconsistencies | Reads design docs, phases improvements, never touches logic |
 | `senior-software-engineer` | Non-trivial code, refactors, debugging | Surfaces assumptions, pushes back, surgical scope |
 | `technical-cofounder` | Building a product from an idea | Phase-by-phase: discovery → plan → build → polish → handoff |
+
+### OMC Agents (oh-my-claudecode v4.9.3)
+Smart model routing: Haiku for search/docs, Sonnet for execution, Opus for architecture/planning.
+
+| Agent | Model | Purpose |
+|-------|-------|---------|
+| `explore` | Haiku | Fast codebase search and pattern matching |
+| `analyst` | Opus | Pre-planning analysis, hidden requirements |
+| `planner` | Opus | Strategic planning, work plan creation |
+| `architect` | Opus | Architecture design, hard debugging |
+| `critic` | Opus | Plan review and validation |
+| `code-simplifier` | Opus | Code clarity and refactoring |
+| `debugger` | Sonnet | Root-cause diagnosis |
+| `executor` | Sonnet | Focused task execution |
+| `verifier` | Sonnet | Completion evidence, claim validation |
+| `designer` | Sonnet | UI/UX visual changes |
+| `test-engineer` | Sonnet | Test strategy and coverage |
+| `scientist` | Sonnet | Data analysis, Python EDA |
+| `tracer` | Sonnet | Evidence-driven causal tracing |
+| `qa-tester` | Sonnet | Interactive CLI testing |
+| `git-master` | Sonnet | Atomic commits, history management |
+| `document-specialist` | Sonnet | External docs and reference lookup |
+| `writer` | Haiku | Technical documentation |
+
+### OMC Magic Keywords
+Use naturally in prompts — no slash commands needed:
+- `autopilot: <task>` — Full autonomous execution (plan → execute → verify)
+- `ralph: <task>` — Persistent mode with verify/fix loops until complete
+- `ulw <task>` — Maximum parallelism burst mode
+- `deep-interview` — Socratic requirements clarification
+- `deepsearch <query>` — Thorough codebase search
+- `ultrathink: <task>` — Extended reasoning mode
 
 
 ## Backup & Restore
@@ -60,6 +93,11 @@ for (const a of agents) {
 "
 ```
 
+**After a PC reset — restore OMC (oh-my-claudecode):**
+```bash
+npm i -g oh-my-claude-sisyphus@latest && omc install && omc setup
+```
+
 **After a PC reset — restore PM skills (65 skills from phuryn/pm-skills):**
 ```bash
 gh repo clone phuryn/pm-skills /tmp/pm-skills 2>/dev/null
@@ -70,6 +108,25 @@ for d in /tmp/pm-skills/pm-*/skills/*/; do
   echo "restored $name"
 done
 rm -rf /tmp/pm-skills
+```
+
+**After a PC reset — restore skill graph MOCs (11 domain navigation maps):**
+```bash
+bash ~/claudecodemem/setup/restore-skill-graph.sh
+```
+
+**After a PC reset — restore rules:**
+```bash
+mkdir -p ~/.claude/rules/common
+cp ~/claudecodemem/rules/common/*.md ~/.claude/rules/common/
+cp ~/claudecodemem/rules/README.md ~/.claude/rules/ 2>/dev/null
+```
+
+**After a PC reset — install arscontexta plugin (knowledge graph builder):**
+```
+/plugin marketplace add agenticnotetaking/arscontexta
+/plugin install arscontexta@agenticnotetaking
+# restart Claude Code, then: /arscontexta:setup
 ```
 
 ## OpenClaw (Telegram AI Bot)
