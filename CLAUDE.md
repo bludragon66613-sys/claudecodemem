@@ -4,11 +4,34 @@
 - GitHub: bludragon66613-sys
 - Memory: `~/.claude/projects/C--Users-Rohan/memory/` — read MEMORY.md at session start
 
+## 3-Layer Memory Architecture
+Claude Code uses a 3-layer persistent memory system synced to Obsidian:
+
+**Layer 1 — Session Memory:**
+- `~/.claude/projects/C--Users-Rohan/memory/` (MEMORY.md index + typed files)
+- claude-mem plugin (cross-session smart_search, timeline, observations)
+- continuous-learning hooks (pattern extraction from sessions)
+
+**Layer 2 — Knowledge Graph (Obsidian):**
+- Vault: `~/OneDrive/Documents/Agentic knowledge/`
+- qmd MCP — semantic search over vault (BM25 + vector embeddings, 2 collections)
+- memory MCP — `@modelcontextprotocol/server-memory` entity/relation graph at `~/.claude/memory-graph/knowledge.json`
+- arscontexta plugin — knowledge architecture
+- MindMap.md auto-rebuilt on session start/stop via `memory-obsidian-sync.js`
+- Hooks: `memory-obsidian-sync.js` (SessionStart+Stop) — unified: syncs memory, aeon logs, sessions, and rebuilds MindMap.md
+
+**Layer 3 — Ingestion Pipeline:**
+- `web-ingest-to-vault.js` — PostToolUse hook on WebFetch/WebSearch, uses markitdown for HTML→MD conversion
+- Session sync integrated into `memory-obsidian-sync.js` (converts `.tmp`/`.json` → vault markdown)
+- qmd re-indexes + re-embeds on session end
+
+**Re-index after major changes:** `qmd update && qmd embed`
+
 ## Session Startup (run first every session)
 Run `bash ~/startup-services.sh` to boot all services:
 1. **OpenClaw** — Telegram bot gateway (healthcheck auto-fixes)
-2. **Paperclip** — Agent platform on :3100 (start before dashboard)
-3. **Dashboard** — NERV on :5555 (`--webpack` mode, NOT turbopack — Windows bug)
+2. **Paperclip** — Agent platform on :3100
+3. **Dashboard** — DISABLED from auto-start. Run manually when needed: `cd ~/aeon/dashboard && npx next dev --webpack --port 5555`
 
 ## Active Projects
 
@@ -152,6 +175,15 @@ Dispatched to GitHub Actions via NERV terminal (`DISPATCH:{"skill":"<name>"}`):
 **BUILD:** article, digest, feature, code-health, changelog, build-skill
 
 **SYSTEM:** goal-tracker, skill-health, self-review, reflect, memory-flush, weekly-review, heartbeat, skill-eval, skill-evolve
+
+## GitNexus (Code Intelligence)
+Local knowledge graph engine indexing all repos via Tree-sitter AST parsing. Exposes 16 MCP tools.
+- **CLI**: `gitnexus` (v1.5.3, globally installed)
+- **MCP**: Configured in `~/.claude.json` (auto-approved in settings.json)
+- **Indexed repos**: aeon (1,002 nodes), paperclip (6,721 nodes), dashboard (524 nodes)
+- **Usage**: `gitnexus query "concept" --repo aeon` | `gitnexus impact "symbol" --repo aeon` | `gitnexus context "symbol" --repo aeon`
+- **Re-index after major changes**: `gitnexus analyze ~/aeon && gitnexus analyze ~/paperclip && gitnexus analyze ~/aeon/dashboard`
+- **MCP tools available in Claude Code**: query, context, impact, detect_changes, rename, cypher, list_repos
 
 ## Preferences
 - Always back up agents + memory to `claudecodemem` after significant changes
