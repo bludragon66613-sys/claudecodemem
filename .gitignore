@@ -1,0 +1,18 @@
+# Secrets
+.env
+.env.*
+*.secret
+*-token*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# OMC/gstack artifacts
+.omc
+.gstack/
+
+# Cache
+*.log
+node_modules/
