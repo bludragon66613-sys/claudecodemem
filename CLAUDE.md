@@ -2,18 +2,18 @@
 
 ## Identity
 - GitHub: bludragon66613-sys
-- Memory: `~/.claude/projects/C--Users-Rohan/memory/` — read MEMORY.md at session start
+- Memory: `~/.claude/projects/-Users-tetsuo/memory/` — read MEMORY.md at session start
 
 ## 3-Layer Memory Architecture
 Claude Code uses a 3-layer persistent memory system synced to Obsidian:
 
 **Layer 1 — Session Memory:**
-- `~/.claude/projects/C--Users-Rohan/memory/` (MEMORY.md index + typed files)
+- `~/.claude/projects/-Users-tetsuo/memory/` (MEMORY.md index + typed files)
 - claude-mem plugin (cross-session smart_search, timeline, observations)
 - continuous-learning hooks (pattern extraction from sessions)
 
 **Layer 2 — Knowledge Graph (Obsidian):**
-- Vault: `~/OneDrive/Documents/Agentic knowledge/`
+- Vault: `~/Documents/Agentic knowledge/`
 - qmd MCP — semantic search over vault (BM25 + vector embeddings, 2 collections)
 - memory MCP — `@modelcontextprotocol/server-memory` entity/relation graph at `~/.claude/memory-graph/knowledge.json`
 - arscontexta plugin — knowledge architecture
