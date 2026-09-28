@@ -43,7 +43,14 @@ Keep: reduced-motion handling and Pause Motion control, 3-required-field contact
 ## Agents and skills for this site
 `web-performance-engineer`, `technical-seo`, `accessibility-auditor`, `conversion-copywriter` (new 2026-09-28), plus `ui-ux-architect` (audit), `super-designer` (build, under `design-mastery`). Skills: `threejs-webgl`, `gsap-scroll-motion`, `visual-regression` (new), `motion-and-animation`, `accessible-primitives`.
 
+## Code structure (from code zip, 2026-09-28)
+- The live site is `public/index.html` + `public/runtime/app.js`, a prebuilt 1.36 MB esbuild bundle (React + Three.js) made outside this repo. **Its source is not in the repo.** `components/` is the old, unused Next.js site; `public/runtime/baseline.js` is an unused older bundle.
+- Hand-written, editable layers: `public/runtime/upgrade.js` (opening film, 3D spellbook, Space ink), `polish.js` (page transitions), `upgrade.css`. Server: `app/route.ts` + `app/[...slug]/route.ts` serve index.html through Next on Netlify.
+- Patch `edith-fixes.patch` delivered 2026-09-28: per-route title/description/canonical/OG via `lib/site-routes.ts`, real 404s, `defer` on scripts (mobile TBT −19%, load event 8.8 s → 3.8 s, LCP unchanged ~4.8 s local throttled), homepage header keyboard-reachable during the opening film, cache + security headers in `netlify.toml`, fake sitemap lastmod removed. Applied by Lito with `git apply`.
+- Bundle splitting, lazy 3D, scramble text, copy fixes inside app.js need the bundle's original source.
+
 ## Open questions
+- Where is the source code for `public/runtime/app.js`? (Possibly in a desktop-files zip or another folder on Lito's Mac.)
 - Lito's preferred animation libraries: noted in the handover's `claude-memory/` folder, not yet received. Ask before choosing GSAP vs Framer Motion defaults.
 - Is the hero footage licensed?
 - Real client outcomes and testimonials for DBA, Area 77, Oktas.
