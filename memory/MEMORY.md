@@ -6,6 +6,7 @@
 - [user_profile.md](user_profile.md) — Rohan's GitHub (bludragon66613-sys), active repos, Claude Code agent setup
 
 ## Projects
+- [project_dba_courtside.md](project_dba_courtside.md) — DBA Courtside dashboard (dba-courtside.vercel.app): taken over 2026-09-28, Sheets sync check-only → go-live pending
 - [project_signal.md](project_signal.md) — SIGNAL consultancy: GTM, pricing, brand architecture, dual-market strategy
 - [project_nerv.md](project_nerv.md) — NERV_02/Aeon: Phase 2 affective memory pipeline shipped 2026-04-15, 54 skills, full daily cron flow, 14-day eval streak exit criterion
 - [project_openclaw.md](project_openclaw.md) — OpenClaw local AI gateway: config, auth, startup, token refresh
@@ -28,6 +29,9 @@
 - [session_savepoint_2026-04-28_drip-shiplist-batch.md](session_savepoint_2026-04-28_drip-shiplist-batch.md) — drip ship-list batch while Matteo silent: 10 commits on phase-0-novelty-gateway. 3 SPEC-mode workspaces scaffolded mock-first (@drip/tokens, @drip/contracts, @drip/vendors). 8 canonical specs ingested into specs/. Python Researcher SDK at clients/python-researcher/ (5 endpoints, mock-first). Eval baseline runner. /decode page. Ratelimit cleanup. design.md devDep slip caught + reverted. 213 tests green. Branch 49 → 58 ahead. PR #1 still draft, CI green on every push.
 - [session_savepoint_2026-04-27b_drip-atlas-s2-discovery.md](session_savepoint_2026-04-27b_drip-atlas-s2-discovery.md) — drip Atlas Session 2 + nav/footer + launch consumer: 5 commits on phase-0-novelty-gateway (10 atlas bodies live, em-dash sweep, footer linkage, /app/launch?activity= consumer, nav linkage). PR #2 opened draft on phase-0-5-layer23. Smoke A + B green on Vercel preview. PATCH §7 E + G scoped, both blocked on Matteo + PR #1 schema. Branch 49 ahead.
 - [session_savepoint_2026-04-27_drip-p05-atlas.md](session_savepoint_2026-04-27_drip-p05-atlas.md) — drip two-branch session: phase-0-5-layer23 cut from master with 5 commits (T4.2 L2 + 23 vitest, T4.6 build_profile + 7 vitest, SDK profile.build, OpenAPI, novelty README), phase-0-novelty-gateway extended with 4 commits (PATCH addition C /regulatory + addition B Atlas, ontology + index + dynamic explainer, 3 live + 10 stub activities). 81 tests green. PR #1 still draft, Matteo silent.
+
+## Feedback
+- [feedback_dba_sujay_sheet_readonly.md](feedback_dba_sujay_sheet_readonly.md) — **NEVER edit/delete/reformat Sujay's DBA "Clients List" Google Sheet** (all 3 DBA source sheets read-only)
 
 ## TODOs
 - [todo_design_agents.md](todo_design_agents.md) — design-mastery stack follow-ups: seed first best-designs library (drip), run first end-to-end trial (`/app/products`), update CLAUDE.md agent table, optional claudecodemem `design/` subfolder
