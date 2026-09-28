@@ -24,6 +24,8 @@ The workflow: write a failing test → implement minimal code to pass → refact
 
 [[e2e-testing]] — Playwright patterns, Page Object Model, configuration. Covers critical user flows and visual regression.
 
+[[visual-regression]] — screenshot baselines per route at mobile, tablet and desktop; freezes motion, masks canvas and video, live-site mode, CI workflow.
+
 ## Advanced Testing
 
 [[property-based-testing]] — generate random inputs to find edge cases (cross-language guidance). [[ai-regression-testing]] — regression strategies for AI-assisted development.
