@@ -54,3 +54,11 @@ Keep: reduced-motion handling and Pause Motion control, 3-required-field contact
 - Lito's preferred animation libraries: noted in the handover's `claude-memory/` folder, not yet received. Ask before choosing GSAP vs Framer Motion defaults.
 - Is the hero footage licensed?
 - Real client outcomes and testimonials for DBA, Area 77, Oktas.
+
+## New site preview (edith-next), built 2026-09-28
+- Fresh Next.js 16 static-export build (source zip `edith-next-source.zip`, not yet in any repo). Dark space story theme chosen by Rohan after rejecting a light minimal version ("too plain").
+- Homepage: particle Earth (real continents from world-atlas land dots) + the old site's `orbital-relay.glb` satellite with orbit trail and downlink beam; particles morph into the brain (Brand), an exploded web page (Websites), the antenna (Content), then fuse into an interactive neural core (AI: drag, cursor push, click shockwave). Globe turns to Hyderabad, Almaty and USA with HTML labels (city, country, clients). Mana Wizards reveal film, animated particle-initial portraits for the founders.
+- Pages: guided 7-step contact brief (WhatsApp/email hand-off, Netlify form stub), Studio media wall of all 22 images and films with lightbox, Services "mission control" console with canvas particle viewport and mission builder (links to /contact?services=).
+- 3D starts only on the first interaction; a still image of the globe is the poster. Mobile Lighthouse about 78 to 84 locally, CLS about 0, a11y 100.
+- Rohan's taste on this project: wants bold, cinematic, sci-fi motion, but "not overwhelming, simple, straightforward"; everything centred with nothing spilling out.
+- Still placeholders: results/testimonials, booking link, budget bands, reply time, founder photos (portraits are generative for now).
