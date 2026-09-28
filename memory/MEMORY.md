@@ -22,6 +22,7 @@
 - [project_lightrag.md](project_lightrag.md) — lightrag-vault: LightRAG knowledge graph over Obsidian vault, MCP server + CLI, 45 tests
 - [project_n8n.md](project_n8n.md) — n8n 2.15.0 on :5678 + n8n-mcp for Claude Code, workflow automation layer complementing OpenClaw/Paperclip
 - [project_furniture_design_tool.md](project_furniture_design_tool.md) — kitchenandwardrobe: Next.js 16 layout generator, Phase 6 quality toggle + inspiration refs shipped 2026-04-13, 281 tests, on master
+- [project_edithinmotion.md](project_edithinmotion.md) — Edithinmotion (Lito's studio) websites: edithinmotion.com on Netlify + 4 Vercel sites, account split (edithinmotion@ vs patrac101), 2026-09-28 audit (LH 28/56, design 5/10) with prioritized fix list. Site repo not reachable from this GitHub account yet
 - [project_wiki_automation.md](project_wiki_automation.md) — **DEFERRED.** 3-layer plan (n8n cron + SessionEnd hook + OpenClaw) to automate /wiki-ingest /wiki-lint /wiki-digest against the Obsidian vault. Picks up from 2026-04-15 session.
 
 ## Session Savepoints (latest 3 — 44 older ones in _archive/)

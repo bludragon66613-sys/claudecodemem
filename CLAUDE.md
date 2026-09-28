@@ -65,6 +65,18 @@ These are globally installed in `~/.claude/agents/` and available in every sessi
 | `senior-software-engineer` | Non-trivial code, refactors, debugging | Surfaces assumptions, pushes back, surgical scope |
 | `technical-cofounder` | Building a product from an idea | Phase-by-phase: discovery → plan → build → polish → handoff |
 
+### Web / Design Agents
+| Agent | Trigger | Purpose |
+|-------|---------|---------|
+| `design-mastery` | Any design task end to end | Lead orchestrator: routes audits to `ui-ux-architect`, builds to `super-designer`, gates on taste |
+| `super-designer` | Build UI, motion, 3D | Designs and builds production UI with a full motion system |
+| `web-performance-engineer` | Slow site, Lighthouse, Core Web Vitals | Measures first, fixes render-blocking JS, bundles, lazy 3D, media, caching; before/after numbers |
+| `technical-seo` | Pages not indexed, SPA/hash routing, metadata | Audits raw HTML per route; pre-render, canonicals, OG, sitemap, real 404s |
+| `accessibility-auditor` | WCAG audit, keyboard, contrast, reduced motion | axe + manual passes across every route; fixes without changing the design |
+| `conversion-copywriter` | Headlines, case studies, CTAs, services copy | 5-second test, problem/approach/outcome rewrites; follows copy-style rules, never invents facts |
+
+Web skills: `threejs-webgl`, `gsap-scroll-motion`, `visual-regression`, `motion-and-animation`, `accessible-primitives`. Retired design agents live in `agents/_archive/`.
+
 ### OMC Agents (oh-my-claudecode v4.9.3)
 Smart model routing: Haiku for search/docs, Sonnet for execution, Opus for architecture/planning.
 

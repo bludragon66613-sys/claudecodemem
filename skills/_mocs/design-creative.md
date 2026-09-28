@@ -22,6 +22,14 @@ Visual design, brand systems, and presentation skills. For frontend code pattern
 
 [[liquid-glass-design]] — iOS 26 Liquid Glass material system (Apple's latest).
 
+## Motion & 3D for the Web
+
+[[gsap-scroll-motion]] — GSAP ScrollTrigger + Lenis: pinning, scrubbed video, text reveals that stay readable, reduced motion, App Router cleanup. [[threejs-webgl]] — Three.js / R3F heroes and particle systems: poster-first LCP, lazy scene, render-loop control, disposal, fallbacks. [[motion-and-animation]] — duration, exit animations, reduced motion.
+
+## Web Quality
+
+[[visual-regression]] — Playwright screenshot baselines across viewports with canvases and video masked. [[accessible-primitives]] — ARIA and focus patterns for components. Agents: `web-performance-engineer`, `technical-seo`, `accessibility-auditor`, `conversion-copywriter`.
+
 ## Presentations & Documents
 
 [[slides]] — strategic HTML presentations with Chart.js and design tokens. [[frontend-slides]] — animation-rich HTML presentations from scratch.
