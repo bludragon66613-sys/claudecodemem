@@ -1,72 +1,41 @@
 # Memory Index
 
-> Full session context is in `C:\Users\Rohan\CLAUDE.md` — read it at session start.
-
 ## User
-- [user_profile.md](user_profile.md) — Rohan's GitHub (bludragon66613-sys), active repos, Claude Code agent setup
-
-## Projects
-- [project_signal.md](project_signal.md) — SIGNAL consultancy: GTM, pricing, brand architecture, dual-market strategy
-- [project_nerv.md](project_nerv.md) — NERV_02/Aeon: Phase 2 affective memory pipeline shipped 2026-04-15, 54 skills, full daily cron flow, 14-day eval streak exit criterion
-- [project_openclaw.md](project_openclaw.md) — OpenClaw local AI gateway: config, auth, startup, token refresh
-- [project_virama.md](project_virama.md) — Virama by SSquare branding project, all file locations, brand facts
-- [project_aigency02.md](project_aigency02.md) — Aigency02 agent repo, superpowers integration, restore instructions
-- [project_rei.md](project_rei.md) — Rei AI VTuber + Solana token launcher (~/companion/), forked from AIRI
-- [project_paperclip.md](project_paperclip.md) — Paperclip AI: open-source agent orchestration platform at ~/paperclip. **PR #3746 open** (11-pass cleanup branch, −2,440 lines, 16→7 cycles)
-- [project_tallyai.md](project_tallyai.md) — TallyAI: AI accounting intelligence for Indian SMEs, Tally XML parser + dashboard
-- [project_munshi_brand.md](project_munshi_brand.md) — Munshi brand bible v3.0: Direction A Stripe Neelam, no Devanagari, repo renamed to Munshi
-- [project_omc.md](project_omc.md) — oh-my-claudecode v4.9.3: multi-agent orchestration, smart model routing, autopilot/ralph modes
-- [project_autoagent.md](project_autoagent.md) — AutoAgent: autonomous agent/skill improvement loop at ~/autoagent (from kevinrgu/autoagent)
-- [project_dexfolioexp.md](project_dexfolioexp.md) — DexFolioExp: Solana DEX analytics platform, Rust+React, forked from GPoet/dexfolio
-- [project_dexfolioexp_design.md](project_dexfolioexp_design.md) — DexFolioExp design direction and UI decisions
-- [project_lightrag.md](project_lightrag.md) — lightrag-vault: LightRAG knowledge graph over Obsidian vault, MCP server + CLI, 45 tests
-- [project_n8n.md](project_n8n.md) — n8n 2.15.0 on :5678 + n8n-mcp for Claude Code, workflow automation layer complementing OpenClaw/Paperclip
-- [project_furniture_design_tool.md](project_furniture_design_tool.md) — kitchenandwardrobe: Next.js 16 layout generator, Phase 6 quality toggle + inspiration refs shipped 2026-04-13, 281 tests, on master
-- [project_wiki_automation.md](project_wiki_automation.md) — **DEFERRED.** 3-layer plan (n8n cron + SessionEnd hook + OpenClaw) to automate /wiki-ingest /wiki-lint /wiki-digest against the Obsidian vault. Picks up from 2026-04-15 session.
-
-## Session Savepoints (latest 3 — 44 older ones in _archive/)
-- [session_savepoint_2026-04-28_drip-shiplist-batch.md](session_savepoint_2026-04-28_drip-shiplist-batch.md) — drip ship-list batch while Matteo silent: 10 commits on phase-0-novelty-gateway. 3 SPEC-mode workspaces scaffolded mock-first (@drip/tokens, @drip/contracts, @drip/vendors). 8 canonical specs ingested into specs/. Python Researcher SDK at clients/python-researcher/ (5 endpoints, mock-first). Eval baseline runner. /decode page. Ratelimit cleanup. design.md devDep slip caught + reverted. 213 tests green. Branch 49 → 58 ahead. PR #1 still draft, CI green on every push.
-- [session_savepoint_2026-04-27b_drip-atlas-s2-discovery.md](session_savepoint_2026-04-27b_drip-atlas-s2-discovery.md) — drip Atlas Session 2 + nav/footer + launch consumer: 5 commits on phase-0-novelty-gateway (10 atlas bodies live, em-dash sweep, footer linkage, /app/launch?activity= consumer, nav linkage). PR #2 opened draft on phase-0-5-layer23. Smoke A + B green on Vercel preview. PATCH §7 E + G scoped, both blocked on Matteo + PR #1 schema. Branch 49 ahead.
-- [session_savepoint_2026-04-27_drip-p05-atlas.md](session_savepoint_2026-04-27_drip-p05-atlas.md) — drip two-branch session: phase-0-5-layer23 cut from master with 5 commits (T4.2 L2 + 23 vitest, T4.6 build_profile + 7 vitest, SDK profile.build, OpenAPI, novelty README), phase-0-novelty-gateway extended with 4 commits (PATCH addition C /regulatory + addition B Atlas, ontology + index + dynamic explainer, 3 live + 10 stub activities). 81 tests green. PR #1 still draft, Matteo silent.
-
-## TODOs
-- [todo_design_agents.md](todo_design_agents.md) — design-mastery stack follow-ups: seed first best-designs library (drip), run first end-to-end trial (`/app/products`), update CLAUDE.md agent table, optional claudecodemem `design/` subfolder
-- [todo_personal_jarvis.md](todo_personal_jarvis.md) — Personal ops Jarvis (Obsidian vault overlay) — build-efficiency + systems-in-check. Parked 2026-04-24. Un-park trigger: ≤3 active projects OR specific pain surfaces. Full spec inside.
-
-## Stalled
-- NERV Desktop app (Tauri+React) — superseded by Kaneda Eye (same Tauri+React stack, broader scope)
-
-## Reference
-- [reference_skill_graphs.md](reference_skill_graphs.md) — Skill graph architecture: 11 domain MOCs in _mocs/ connecting 285 skills via wikilinks (arscontexta pattern)
-- [reference_cc_source_architecture.md](reference_cc_source_architecture.md) — CC source architecture: hooks (5 types), memory, coordinator, plugins, context mgmt
-- [reference_marketing_skills.md](reference_marketing_skills.md) — 11 AI marketing skills from ericosiu/ai-marketing-skills: growth, sales, content, SEO, finance, outbound, podcasts
-- [reference_design_library.md](reference_design_library.md) — 54 brand DESIGN.md files at ~/.claude/design-references/ (awesome-design-md), design-reference skill
-- [reference_memory_architecture.md](reference_memory_architecture.md) — 3-layer memory: session memory, Obsidian knowledge graph (qmd+server-memory), web ingestion pipeline
-- [reference_summarize.md](reference_summarize.md) — steipete/summarize CLI: content extraction, Gemini Flash default, vault integration via sum-to-vault
+- [Identity](user_identity.md) — GitHub `bludragon66613-sys`, email `bludragon66613@gmail.com`, mac primary host
+- [Workflow style](user_workflow.md) — uses caveman mode for terse comms, OMC orchestration layer, decision-process discipline
 
 ## Feedback
-- [feedback_decision_process.md](feedback_decision_process.md) — **HARD RULE.** No plausible-sounding inference — ask when unsure. For non-trivial tasks: state task, decompose, research risks, list options, recommend, weigh tradeoffs, ask for direction, then execute. Overrides default "just do it" nudges.
-- [feedback_model_selection.md](feedback_model_selection.md) — Use Sonnet by default, Opus only for complex coding/reasoning
-- [feedback_session_startup.md](feedback_session_startup.md) — Boot OpenClaw->Paperclip->Dashboard at every session start
-- [feedback_openclaw_startup.md](feedback_openclaw_startup.md) — OpenClaw restart pitfalls: zombie shells, duplicate gateway instances
-- [feedback_backup.md](feedback_backup.md) — Back up agents and memory to claudecodemem after significant changes
-- [feedback_design_quality.md](feedback_design_quality.md) — Japanese minimalism, no tacky effects, always include brand marks, billion-dollar product quality
-- [feedback_obsidian_sync.md](feedback_obsidian_sync.md) — Always exclude shueb.io from Obsidian vault syncs
-- [feedback_pdf_quality.md](feedback_pdf_quality.md) — HTML-to-PDF via Puppeteer is sloppy; use proper PDF libs, always visually review, build PDF review skill
-- [feedback_ai_design_antipatterns.md](feedback_ai_design_antipatterns.md) — 9 vibe-coded UI anti-patterns to never generate: icon boxes, glassmorphism, gradient abuse, nested cards, broken animations
-- [feedback_openclaw_glm_routing.md](feedback_openclaw_glm_routing.md) — GLM on OpenClaw: free OR tier caps max_tokens under runtime default; only glm-4.5-air:free works free, paid GLMs silently fall back
-- [feedback_secret_handling.md](feedback_secret_handling.md) — Never Edit/Write/Read files containing secrets — Claude Code's file-change notification echoes contents into session jsonl, creating a leak loop (lesson from 3-rotation incident 2026-04-15)
-- [feedback_design_process.md](feedback_design_process.md) — Before any visual surface: read the project brand bible + study an existing component. Inline styles against a generic dark palette produces trash.
-- [feedback_copy_style.md](feedback_copy_style.md) — Three AI-slop glyphs to never use in copy: em-dash `—`, double-hyphen `--`, section mark `§`. Replace with period/comma/colon/mid-dot, or rephrase.
-- [feedback_opus_4_7_prompting.md](feedback_opus_4_7_prompting.md) — Opus 4.7 punishes imprecision: temperature/top_p/top_k blocked, xhigh default, adaptive thinking eats budget on vague prompts. Demand explicit intent + success criteria + constraints + what-NOT-to-do.
-- [feedback_rtk_filter.md](feedback_rtk_filter.md) — rtk filter drops tsc error lines so broken builds look green. After schema/type changes, run `pnpm typecheck` without rtk at least once before committing.
-- [feedback_nextjs_public_env_server_fallback.md](feedback_nextjs_public_env_server_fallback.md) — Server SDK helpers must coalesce `FOO_APP_ID ?? NEXT_PUBLIC_FOO_APP_ID`, else operators who only set the public name get silent server-side 401s while client auth looks healthy
+- [Decision process](feedback_decision_process.md) — non-trivial actions need 8-step decompose+recommend+wait, not auto-execute
+- [Caveman mode](feedback_caveman_mode.md) — drop articles/filler/pleasantries; fragments OK; code/security normal
+- [Multi-agent isolation](feedback_multi_agent_isolation.md) — when 2+ AI agents share a repo, use worktree-per-agent (claude/main + codex/main), not branches in shared dir
+- [Next.js build cache](feedback_nextjs_build_cache.md) — `rm -rf .next` before declaring "build green"; cache can mask conflict markers + source errors
+- [Stash pop conflicts](feedback_stash_pop_conflicts.md) — never `git add` a conflicted file without grep for `<<<<<<<` first; git accepts marker-laden files silently
+- [Next.js dotenv-expand](feedback_nextjs_dotenv_expand.md) — bcrypt hashes / `$`-containing env values get chunks eaten; escape with `\$` in `.env*`
+- [Project folder layout](feedback_project_layout.md) — new projects always go at `~/Documents/<name>/` (sibling to vault) + home-root symlink + vault `projects/<name>.md` symlink
+- [Dedup safety](feedback_dedup_safety.md) — never `rm` one of two "identical" paths without `readlink` on both; inode match + empty `diff -rq` can be symlink-induced false equivalence (caused real data loss 2026-05-14)
+- [Design-first workflow](feedback_design_workflow.md) — visual rebuilds need brand bible → design-mastery previews → approvals BEFORE code; do not skip gates
+- [Website agent routing](feedback_agent_routing_websites.md) — web builds: executor(opus)+karpathy for code, separate design-mastery AUDIT instance for review; builder never grades itself
+- [Single-root project folders](feedback_project_folder_singleroot.md) — sub-artifacts (brand/site/design) nest inside `~/Documents/<project>/`, never as siblings at Documents root
+- [Obsidian vault stuck loading](feedback_obsidian_vault_health.md) — "Loading vault/cache" hang = dir symlink at vault root OR stale IndexedDB; check symlinks first, reset cache second; never directory-symlink projects into vault
 
-## Projects (New)
-- [project_nts.md](project_nts.md) — Neo Tokyo Studios: AI anime production house, brand bible complete, Vercel deployed
-- [project_kaneda_eye.md](project_kaneda_eye.md) — Kaneda Eye: Tauri 2 screen-aware AI companion + voice command layer, scaffold complete
-- [project_cos.md](project_cos.md) — Chief of Staff: Obsidian vault overlay for actions, decisions, clients, transcripts, frameworks
-- [project_autoresearch.md](project_autoresearch.md) — Autoresearch: karpathy-style experiment loop ported from davebcn87/pi-autoresearch, wired into NERV dashboard + Aeon skill-evolve + n8n cron + Obsidian sync
-- [project_drip.md](project_drip.md) — **drip** (rebranded from "DRIP Protocol" 2026-04-17): peptide creator-brand platform at drip.markets, AI discovery + creator storefronts + MD-pharmacy rails + $DRIP token. Domain secured. With Matteo (cybergenesis621).
-- [project_morning_light.md](project_morning_light.md) — **Morning Light Energy** (was "Singularity Energy" pre-2026-04-17): AI-powered Premier-backed rooftop solar EPC in TG+AP, `morning-light-energy` repo, `morninglight.energy` domain. 5-phase plan (residential → district aggregator → C&I → platform → utility 10MW).
-- [project_browser_harness.md](project_browser_harness.md) — **browser-harness (Windows-patched)** at `~/Developer/browser-harness`, installed 2026-04-19. AF_UNIX → TCP loopback + UTF-8 stdout fixes. Global `browser-harness` CLI, imported into `~/.claude/CLAUDE.md`.
+## Project
+- [Active stack](project_active_stack.md) — NERV_02/Aeon, nerv-dashboard, n8n, Paperclip, OpenClaw, claudecodemem
+- [Vault canonical path](project_vault_path.md) — `~/Documents/Vault/` is canonical (moved from Downloads 2026-05-14); Downloads path is back-compat symlink
+- [Paperclip onboard quirks](project_paperclip_onboard.md) — `onboard -y` silently boots second server; `/api/health` not `/health`; restart dev:server to load JWT
+- [SSquare website](project_ssquare.md) — Hyderabad commercial property dev-builder site; repo `bludragon66613-sys/Ssquare`; worktrees at ~/ssquare-claude (claude/main) + ~/ssquare-codex (codex/main); spec locked Direction E
+- [Kaneda workspace](project_kaneda_workspace.md) — Telegram bot @kaneda6bot, ~/.openclaw/workspace, Spike self-improvement loop ported 2026-05-10 (PROGRAM/ROADMAP/clawchief/evals/KB + vault round-trip)
+- [react-doctor CI](project_react_doctor.md) — react-doctor lint+score adopted 2026-05-11 across Ssquare/NERV_02/nerv-dashboard; all 3 repos at 100/100 with fail-on:warning gates active
+- [fatfk / FAT FCK](project_fatfk.md) — research-peptide brand + Next.js store; repo `bludragon66613-sys/fatfk` (single `c`); rebranded `FAT FCK` → `FAT F*CK` for display (PR #13); censored `FAT FK` preserved for ad/media
+- [fatfk handoff 2026-05-11](handoff_fatfk_2026-05-11.md) — resume bundle: 12 PRs merged, prod deployed, **awaiting Vercel envs + db:push** for store to actually serve products
+- [fatfk todo 2026-05-12](handoff_fatfk_todo_2026-05-12.md) — pending punch list; #16 merged, #17 + #18 open (CI-green); 7-step user-ops checklist still blocks prod
+- [drip.markets platform](project_drip.md) — Solana peptide+creator platform; repo `bludragon66613-sys/Drip`; co-founder Matteo; Next.js 16 + Hono + 9 workspace pkgs; PR #10 Aurora ingest merged 2026-05-11; migrations 0019-0026 still pending Neon apply
+- [joff project](project_joff.md) — F.A.T. F*K mascot/brand landing site; repo `bludragon66613-sys/joff` (private, initialized 2026-05-15 as rescue commit after iCloud recovery); Vite+React+TS+Tailwind at site/, 256 files in initial commit
+
+## Reference
+- [Infra ports](reference_infra.md) — OpenClaw :18789, n8n :5678, Paperclip :3100, dashboard :5555
+- [MCP servers](reference_mcp.md) — gitnexus, qmd, memory wired to ~/.claude.json (require CC restart to activate)
+- [Repos](reference_repos.md) — bludragon66613-sys/{NERV_02, nerv-dashboard, claudecodemem, Setup, Ssquare}, paperclipai/paperclip
+- [ffmpeg install](reference_ffmpeg.md) — static arm64 ffmpeg 7.1.1 at `~/.local/bin/ffmpeg` (no brew); osxexperts.net source; hero-loop transcode preset
+- [Mac iCloud config](reference_mac_icloud.md) — Mac mini M2, 8GB RAM; iCloud "Desktop & Documents Folders" sync **DISABLED** 2026-05-15 (re-enabling = sync storm on code repos under ~/Documents)
+- [qmd on Mac](reference_qmd_mac.md) — install via `npm i -g @tobilu/qmd` (not bun, due to libsqlite3.dylib not found); 826 docs / 1728 vectors indexed as of 2026-05-15
+- [Setup upgrade routine](reference_setup_upgrade.md) — how to upgrade OMC (`omc setup`, not `install`), plugins (`claude plugin update`), and pull paperclip upstream safely
